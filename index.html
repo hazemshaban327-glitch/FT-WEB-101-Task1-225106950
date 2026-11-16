@@ -1,0 +1,90 @@
+<!--
+Name: Hazem Shaban Abdallah Saeed
+Student ID: 225106950
+Task 1 - Profile Page | FT-WEB-101
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hazem Shaban Abdallah Saeed | Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home">Hazem Shaban Abdallah Saeed</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Hazem Shaban Abdallah Saeed</h1>
+        <p class="intro">I'm a Computer Science student who enjoys learning, building useful projects, and exploring technology.</p>
+        <button id="theme-toggle" class="theme-button" type="button" aria-pressed="false">
+          Toggle dark mode
+        </button>
+      </div>
+      <img class="profile-photo" src="images/me.jpg" alt="A photo of me">
+    </section>
+
+    <section class="content-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Things I enjoy</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="card-number">01</span>
+          <h3>Programming</h3>
+          <p>Learning how to solve problems and turn ideas into working projects.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">02</span>
+          <h3>Technology</h3>
+          <p>Exploring new tools, websites, and the latest developments in tech.</p>
+        </article>
+        <article class="card">
+          <span class="card-number">03</span>
+          <h3>Teamwork</h3>
+          <p>Sharing ideas, learning from others, and working toward common goals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Leave your details</h2>
+        <p class="section-description">Fill in the form below.</p>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-field">
+          <label for="visitor-name">Name</label>
+          <input type="text" id="visitor-name" name="visitor-name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <button class="submit-button" type="submit">Send</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Hazem Shaban Abdallah Saeed. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
